@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS_typeOf</title>
+        <script>
+            function ArrType(myArr){
+                var myArr_new= [];
+                for (i=0; i<myArr.length; i++){
+                    if (typeof myArr[i]==="number"){
+                        myArr_new.push(myArr[i]);
+                    }
+                }
+                console.log(myArr_new);
+            }
+            ArrType([3,7,8,"tyr",9,"opk",2]);
+            
+        </script>
+    </head>
+</html>

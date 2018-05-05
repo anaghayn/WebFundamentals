@@ -1,0 +1,128 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B494A;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    display: inline;
+}
+h2 {
+    background: linear-gradient(#B7B7BA, #878593, #A9A9AE);
+    padding: 10px;
+    font-size: 20px;
+    color: #F7FFFF;
+    font-weight: normal;
+}
+h3 {
+    background: linear-gradient(#B7B7BA, #878593, #A9A9AE);
+    padding: 9px 10px;
+    font-size: 17px;
+    color: #F7FFFF;
+    font-weight: normal;
+}
+.column {
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px #4B494A;
+    background: linear-gradient(to right, white , #DCCDD9);
+}
+
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    background-color: #FAFAFA;
+}
+#header, #bio, #footer {
+    padding: 10px 27px;
+}
+#header p {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#bio {
+    background: radial-gradient(#715963, #2a171d);
+}
+#mainBody, lowerBody {
+    padding: 10px 0px 20px;
+}
+#mainBody img {
+    width: 400px;
+    margin: 0px 19px 0px 0px;
+    border: 6px solid #C0C0C0;
+}
+#mainBody .column {
+    vertical-align: top;
+    height: 275px;
+    width: 480px;
+}
+#mainBody .column .description {
+    padding: 0px 10px;
+}
+#mainBody p {
+    padding: 10px 0px;
+}
+#lowerBody .column {
+    font-size: 14px;
+    vertical-align: top;
+    width: 285px;
+    margin: 0px 26px 15px 0px;
+}
+#lowerBody .column:last-child {
+    margin-right: 0px;
+}
+#lowerBody .column .description {
+    height: 365px;
+    width: inherit;
+}
+#lowerBody .column .description p {
+    text-align: justify;
+    padding: 10px;
+}
+#lowerBody .description img  {
+    width: inherit;
+    display: inline-block;
+}
+#lowerBody .technology {
+    padding: 5px 10px;
+}
+#lowerBody .technology img {
+    width: 40px;
+    margin: 4px;
+}
+#lowerBody .button {
+    display: block;
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+#lowerBody .button a {
+    background-color: #407D61;
+    border: 1px solid #4B494A;
+    box-shadow: 3px 3px 8px #4B494A;
+    border-radius: 9px;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+}
+#footer {
+    text-align: center;
+}
+#footer p {
+    margin-bottom: 14px;
+}
+#footer a {
+    font-style: italic;
+}
+#footer li {
+    display: inline;
+}
+#footer img {
+    width: 20px;
+}

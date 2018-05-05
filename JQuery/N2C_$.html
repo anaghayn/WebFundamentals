@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja to Cat</title>
+        <script type= "text/javascript" src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('img').click(function(){
+                    var ninja =$(this).attr('src');
+                    var cat = $(this).attr('data-alt-src');
+                    $(this).hide(function(){
+                        $(this).show();
+                        $(this).attr('src', cat);
+                        $(this).attr('data-alt-src', ninja);
+                    })
+                })
+            })
+        </script>
+        <style>
+            .wrapper{
+                width: 1100px;
+                margin: 0px;
+            }
+            img{
+                display: block;
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h2>Assignment three_Ninja to Cat</h2>
+            <div>
+                <img src="img/ninja0.png" alt="image_n1" data-alt-src="img/cat0.png"/>
+                <img src="img/ninja1.png" alt="image_n2" data-alt-src="img/cat1.png"/>
+                <img src="img/ninja2.png" alt="image_n3" data-alt-src="img/cat2.png"/>
+                <img src="img/ninja3.png" alt="image_n4" data-alt-src="img/cat3.png"/>
+                <img src="img/ninja4.png" alt="image_n5" data-alt-src="img/cat4.png"/>
+            </div>
+        </div>
+    </body>
+
+</html>

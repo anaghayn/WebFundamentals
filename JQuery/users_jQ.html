@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Users_JQ</title>
+        <script type= "text/javascript" src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    var info={};
+                    $.each($('form').serializeArray(),function(i,field){
+                        info[field.name]= field.value;
+                    });
+                    console.log(info.first_N, info.last_N, info.email, info.phone);
+                    $('table').append('<tr><td>'+info.first_N+'</td><td>'+info.last_N+'</td><td>'+info.email+'</td><td>'+info.phone+'</td></tr>');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrapper {
+            display: block;
+            margin: 0px;
+            padding: 30px;
+            width: 500px;
+        }
+        table {
+            border: 2px solid black;
+        }
+        th, td {
+            padding-right: 15px;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        form {
+            border-top: 3px solid silver;
+            text-align: right;
+            width: 300px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 20px 0px;
+        }
+        li {
+            margin: 5px 0px;
+        }
+        
+    </style>
+    <body>
+        <div id= wrapper>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Contact #</th>
+                    </tr>
+                </thead>
+            </table>
+            <h1>Add User</h1>
+            <form>
+                <ul>
+                    <li>
+                        <label>First Name</label>
+                        <input type="text" name="first_N" value="First Name"/>
+                    </li>
+                    <li>
+                        <label>Last Name</label>
+                        <input type="text" name="last_N" value="Last Name"/>
+                    </li>
+                    <li>
+                        <label>Email Address</label>
+                        <input type="text" name="email" value="Email Address"/>
+                    </li>
+                    <li>
+                        <label>Contact #</label>
+                        <input type="text" name="phone" value="Contact #"/>
+                    </li>
+                </ul>
+                <input type="submit" value="Add User">
+            </form>
+        </div>
+    </body>
+
+</html>

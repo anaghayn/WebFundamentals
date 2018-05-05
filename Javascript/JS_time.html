@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS_TIME</title>
+        <script>
+            function my_time(hr,min){
+                var str;
+                var x;
+                    if (min <30){
+                        str ="just after";
+                    }
+                    else{
+                        hr = hr+1;
+                        str = "just before";
+                    }
+                    var hr
+
+                    if (hr<12){
+                        x = "AM";
+                    }
+                    else if (hr >12 && hr<24) {
+                        x="PM";
+                    }
+
+
+                    console.log ("It's ",str ,hr ,x ,".");
+
+            }
+            my_time(8,26);
+            my_time(22,45);
+        </script>
+    </head>
+</html>
+

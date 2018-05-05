@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Contact_card</title>
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('form').submit(function() {
+                var text = {};
+                var str = "Click for description!";
+                $.each($('form').serializeArray(), function(i, field) {
+                    text[field.name] = field.value;
+                });
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <form>
+            <ul>
+                <li>
+                    <label>First Name:</label>
+                    <input type="text" name="First_N" value= "Michael">
+                </li>
+                <li>
+                    <label>Last Name:</label>
+                    <input type="text" name="Last_N" value="Choi">
+                </li>
+                <li>
+                    <label>Description:</label>
+                </li>
+                <li>
+                    <textarea name="info">Codingdojo's fearless leader. Master of instruction</textarea>
+                </li>
+            </ul>
+            <input type="submit" value="Add User">
+        </form>
+        <div id ="info_column"></div>
+    </body>
+</html>

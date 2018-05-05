@@ -1,0 +1,12 @@
+p{
+    color: deeppink;
+}
+
+#important{
+    font-size:36px; 
+}
+
+.info{
+    background-color: cadetblue;
+    border: 1px solid black;
+}

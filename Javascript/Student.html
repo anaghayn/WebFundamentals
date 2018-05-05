@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS_Student</title>
+        <script>
+            var users={
+                'Students': [
+                    {
+                        first_name: 'Micheal',
+                        last_name: 'Jordan'
+                    },
+                    {
+                        first_name: 'John',
+                        last_name:'Rosales'
+                    },
+                    {
+                        first_name: 'Mark',
+                        last_name: 'Guillen'
+                    },
+                    {
+                        first_name: 'KB',
+                        last_name: 'Tonel'
+                    }
+                ],
+                'Instructors':[
+                    {
+                        first_name:'Micheal',
+                        last_name: 'Choi'
+                    },
+                    {
+                        first_name:'Martin',
+                        last_name:'Puryear'
+                    }
+                ]
+            }
+            
+            console.log("Students");
+            
+            
+            for (var i=0; i<users.Students.length; i++){     
+                var x =  users.Students[i].first_name.length + users.Students[i].last_name.length;  
+                var n= i+1;
+                console.log(n+ " - "+ users.Students[i].first_name , users.Students[i].last_name +" - " +  x);
+            }
+
+            console.log("Instructors")
+            for (var i=0; i<users.Instructors.length; i++){
+                var x =  users.Instructors[i].first_name.length + users.Instructors[i].last_name.length; 
+                var n= i+1; 
+                console.log(n+ " - "+ users.Instructors[i].first_name , users.Instructors[i].last_name + " - " + x);
+            }
+        </script>
+    </head>
+</html>
